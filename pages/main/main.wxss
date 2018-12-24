@@ -1,0 +1,33 @@
+/* pages/main/main.wxss */
+
+.red {
+  border: solid red;
+}
+.banner {
+  height: 40vh;
+  background-size: cover !important;
+}
+
+.card {
+  margin: auto;
+  height: 15vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  border: none;
+  border-radius: 20rpx;
+  box-shadow: 2rpx 2rpx 2rpx rgba(0, 0, 0, 0.5);
+}
+.card-img {
+flex: 2;
+background-size: cover !important;
+border-radius: 17rpx;
+}
+.card-txt {
+flex: 1;
+text-align: center;
+padding: 2rpx;
+background-color: white;
+border-radius: 17rpx;
+}
