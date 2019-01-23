@@ -33,12 +33,30 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
 					"name": "main",
-					"pathName": "pages/main/main"
+					"pathName": "pages/main/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "recipe",
+					"pathName": "pages/recipe/recipe",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Add",
+					"pathName": "pages/addRecipe/addRecipe",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index"
 				}
 			]
 		}

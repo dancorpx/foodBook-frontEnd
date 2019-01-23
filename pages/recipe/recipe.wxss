@@ -1,0 +1,18 @@
+/* pages/recipe/recipe.wxss */
+.recipe-img {
+  height: 40vh;
+  background-size: cover !important;
+}
+.recipe-heading {
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.recipe-txt {
+  margin-top: 20rpx;
+}
+ul {
+  list-style-type: square;
+}
+.recipe-ingredients {
+  margin-top: 10rpx;
+}

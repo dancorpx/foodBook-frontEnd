@@ -1,0 +1,22 @@
+<!--pages/addRecipe/addRecipe.wxml-->
+<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('http://img.mp.itc.cn/upload/20170417/85719768647642ba91fc5b32210c1cc7_th.jpeg');">
+ </view>
+
+<view class="container">
+    <view class="page-title">Add Recipe</view>
+    <form bindsubmit='bindSubmit'>
+      <view class="form-title">
+      Title:
+      </view>
+        <input placeholder="Enter Recipe Title" class="title-input">
+        </input>
+      <view class="recipe-text">
+      Recipe:
+        <input placeholder="Enter Recipe" class="recipe-input">
+        </input>
+      </view>
+      <button>
+        Submit
+      </button>
+    </form>
+</view>

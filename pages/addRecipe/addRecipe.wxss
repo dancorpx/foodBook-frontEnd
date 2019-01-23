@@ -1,0 +1,9 @@
+/* pages/addRecipe/addRecipe.wxss */
+.banner {
+  height: 40vh;
+  background-size: cover !important;
+}
+.page-title {
+  font-size: 60rpx;
+  font-weight: bold;
+}

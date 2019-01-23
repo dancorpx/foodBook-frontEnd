@@ -1,34 +1,18 @@
-// pages/main/main.js
-const app = getApp()
-
-const myRequest = require('../../lib/api/request');
-
+// pages/addRecipe/addRecipe.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: { items: [] },
-    goRecipe: function () {
-      wx.navigateTo({
-        url: '/pages/recipe/recipe',
-      })
-    },
+  data: {
   
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
-    let page = this
-    // fetch items from API
-    myRequest.get({
-      path: 'recipes',
-      success(res)  {
-        console.log(res)
-        page.setData({items : res.data.recipes})
-      }
-    })
+  onLoad: function (options) {
+  
   },
 
   /**
