@@ -7,3 +7,10 @@
   font-size: 60rpx;
   font-weight: bold;
 }
+
+ /* Button */
+   .submit-button {
+       background-color: #C34A44;
+       color: white;
+       margin: 20px;
+   }

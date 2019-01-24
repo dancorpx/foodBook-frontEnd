@@ -1,4 +1,8 @@
 // pages/addRecipe/addRecipe.js
+const app = getApp()
+
+const myRequest = require('../../lib/api/request.js');
+
 Page({
 
   /**
@@ -6,6 +10,26 @@ Page({
    */
   data: {
   
+  },
+  bindSubmit: function (e) {
+
+    wx.showToast({
+      title: 'Sending...',
+      icon: 'loading',
+      duration: 1000
+    })
+  let title = e.detail.value.title
+  let method = e.detail.value.method
+
+  console.log(e)
+  app.globalData.items.unshift({title: title, method: method})
+
+  setTimeout(function () {
+    wx.reLaunch({
+      url: '/pages/main/main',
+    })
+  }, 1000)
+
   },
 
   /**
