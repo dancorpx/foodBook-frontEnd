@@ -1,18 +1,29 @@
 // pages/recipe/recipe.js
+const app = getApp()
+
+const myRequest = require('../../lib/api/request');
+
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {
-  
-  },
+  data: { items: [] },
+ 
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let page = this
+    // fetch items from API
+    myRequest.get({
+      path: 'recipes',
+      success(res) {
+        console.log(res)
+        page.setData({ items: res.data.recipes })
+      }
+    })
   },
 
   /**

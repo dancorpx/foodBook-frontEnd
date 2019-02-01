@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: { items: [] },
-    goRecipe: function () {
+    goRecipe: function () { 
       wx.navigateTo({
         url: '/pages/recipe/recipe',
       })

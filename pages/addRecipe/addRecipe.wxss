@@ -6,11 +6,22 @@
 .page-title {
   font-size: 60rpx;
   font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+/* form */
+.input {
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  border: solid white;
+  background: white;
+  border-radius: 10rpx;
 }
 
  /* Button */
    .submit-button {
-       background-color: #C34A44;
-       color: white;
+       background-color: white;
+       color: #C34A44;
+       border: solid 5rpx;
        margin: 20px;
    }

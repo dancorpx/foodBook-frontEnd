@@ -7,8 +7,11 @@
 <view class="container">
     <view class="page-title">Add Recipe</view>
     <form bindsubmit='bindSubmit'>
-      <textarea placeholder="Title" value="{{userInfo.nickName}}" name="title" auto-height />
-      <textarea placeholder="Enter Recipe" style="input-size" name="method" maxlength="-1" />
+      <textarea class="input" placeholder="Title"  name="title" auto-height />
+      <textarea class="input" placeholder="Ingredients" name="ingredients" auto-height />
+      <textarea class="input" placeholder='Image URL' name="image_url" auto-height />
+      <textarea class="input" placeholder="Enter Recipe" style="input-size" name="method" maxlength="-1" />
+
       <button class="submit-button" form-type='submit'>Submit</button>
     </form>
 </view>

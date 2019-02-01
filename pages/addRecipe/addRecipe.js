@@ -8,22 +8,33 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-  
-  },
+  data: { },
+  //  Form submit button
   bindSubmit: function (e) {
-
+    
+    let page = this
     wx.showToast({
       title: 'Sending...',
       icon: 'loading',
       duration: 1000
     })
-  let title = e.detail.value.title
-  let method = e.detail.value.method
 
-  console.log(e)
-  app.globalData.items.unshift({title: title, method: method})
-
+    // Post new story to API
+    myRequest.post ({
+      path: 'recipes',
+      data: {
+        recipe: {
+          title: e.detail.value.title,
+          method: e.detail.value.method,
+          image_url: e.detail.value.image_url,
+          ingredients: e.detail.value.ingredients
+        }
+      },
+      success(res) {
+        console.log(res)
+      }
+    })
+  
   setTimeout(function () {
     wx.reLaunch({
       url: '/pages/main/main',

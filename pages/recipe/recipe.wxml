@@ -1,25 +1,20 @@
 <!--pages/recipe/recipe.wxml-->
-<view class="recipe-img" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('https://thewanderlustkitchen.com/wp-content/uploads/2016/06/chinese-tomato-eggs-3.jpg');">
- </view>
- <view class="container">
-    <view class="recipe-heading">
-    Fried Tomato and Eggs
-    </view>
-    <view class="recipe-ingredients">
-      <ul>
-      Ingredients:
-        <li>Egg</li>
-        <li>Tomato</li>
-        <li>Garlic</li>
-        <li>Oil</li>
-        <li>Salt</li>
-      </ul>
+<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
+  <view class="recipe-img" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('{{item.image_url}}');">
   </view>
-  <view class="recipe-txt">
-  Beat the eggs and add 1/3 of the garlic (minced) in. Add a pinch of salt.
-  Heat up some oil (more than you were use to fry an egg) throw the egg in.
-  Stir it around so that it cooks evenly. Remove from pan.
-  Chop tomatos into sixths or eighths and fry them with garlic until they start to lose their shape. Now put the eggs back in, and fry it for a few more minutes, adding salt.
-  Dont stir or cook for too long or the tomato will fall apart.
+  <view class="container">
+      <view class="recipe-heading">
+      {{item.title}}
+      </view>
+      <view class="recipe-ingredients">
+        <ul>
+        Ingredients:
+          {{item.ingredients}}
+        </ul>
     </view>
- </view>
+    <view class="recipe-txt">
+      Method:
+      {{item.method}}
+    </view>
+  </view>
+ </block>
