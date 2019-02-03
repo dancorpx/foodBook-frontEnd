@@ -24,6 +24,7 @@ Page({
         page.setData({ items: res.data.recipes })
       }
     })
+
   },
 
   /**

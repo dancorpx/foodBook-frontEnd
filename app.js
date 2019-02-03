@@ -1,3 +1,11 @@
+const AV = require('./utils/av-weapp-min.js')
+const config = require('./keys.js')
+
+AV.init({
+  appId: config.leanCloudID,
+  appKey: config.leanCloudSecret,
+});
+
 App({
 onLaunch: function () {
   console.log(444, this.globalData)

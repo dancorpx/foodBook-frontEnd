@@ -9,10 +9,16 @@
 }
 .recipe-txt {
   margin-top: 20rpx;
+  background: white;
+  border: solid white;
+  border-radius: 10rpx;
 }
-ul {
-  list-style-type: square;
-}
+
 .recipe-ingredients {
   margin-top: 10rpx;
+  background: white;
+  border: solid white;
+}
+text {
+  font-weight: bold;
 }
