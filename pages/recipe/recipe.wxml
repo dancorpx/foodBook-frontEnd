@@ -6,14 +6,12 @@
       <view class="recipe-heading">
       {{item.title}}
       </view>
-      <view class="recipe-ingredients">
-        <ul>
-        Ingredients:
+      <view class="recipe-txt">
+        <text>Ingredients:</text>
           {{item.ingredients}}
-        </ul>
-    </view>
+     </view>
     <view class="recipe-txt">
-      Method:
+      <text>Method:</text>
       {{item.method}}
     </view>
   </view>

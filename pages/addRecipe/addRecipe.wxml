@@ -9,7 +9,7 @@
     <form bindsubmit='bindSubmit'>
       <textarea class="input" placeholder="Title"  name="title" auto-height />
       <textarea class="input" placeholder="Ingredients" name="ingredients" auto-height />
-      <textarea class="input" placeholder='Image URL' name="image_url" auto-height />
+      <button name="image_url" bindtap="takePhoto" auto-height>Upload Image</button>
       <textarea class="input" placeholder="Enter Recipe" style="input-size" name="method" maxlength="-1" />
 
       <button class="submit-button" form-type='submit'>Submit</button>

@@ -9,11 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: { items: [] },
-    goRecipe: function () { 
-      wx.navigateTo({
-        url: '/pages/recipe/recipe',
-      })
-    },
+    
   
 
   /**
@@ -30,6 +26,23 @@ Page({
       }
     })
   },
+    goRecipe: function (e) {
+      let that = this
+      let data = e.currentTarget.dataset
+      let index = data.index
+      let item_id = that.data.items[index].id
+
+      let _url = '/pages/recipe/item?id=' + item_id
+
+      console.log("goRecipe - item >>")
+      console.log(index)
+
+      app.globalData.recipe = that.data.items[index]
+      wx.redirectTo({
+        url: _url,
+      })
+    },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
