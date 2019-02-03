@@ -10,7 +10,7 @@
       <textarea class="input" placeholder="Title"  name="title" auto-height />
       <textarea class="input" placeholder="Ingredients" name="ingredients" auto-height />
       <button name="image_url" bindtap="takePhoto" auto-height>Upload Image</button>
-      <textarea class="input" placeholder="Enter Recipe" style="input-size" name="method" maxlength="-1" />
+      <textarea class="method" placeholder="Enter Recipe" style="input-size" name="method" />
 
       <button class="submit-button" form-type='submit'>Submit</button>
     </form>

@@ -13,11 +13,12 @@
   height: 15vh;
   width: 90vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 3vh;
   border: none;
   border-radius: 20rpx;
   box-shadow: 2rpx 2rpx 2rpx rgba(0, 0, 0, 0.5);
+  background: white;
 }
 .card-img {
 flex: 2;
@@ -30,4 +31,5 @@ text-align: center;
 padding: 2rpx;
 background-color: white;
 border-radius: 17rpx;
+margin: auto;
 }

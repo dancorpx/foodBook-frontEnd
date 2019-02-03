@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 80rpx;
+  padding-top: 60rpx;
   padding-left: 20rpx;
   padding-right: 20rpx;
   box-sizing: border-box;

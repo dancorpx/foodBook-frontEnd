@@ -1,6 +1,6 @@
 /* pages/addRecipe/addRecipe.wxss */
 .banner {
-  height: 40vh;
+  height: 30vh;
   background-size: cover !important;
 }
 .page-title {
@@ -17,7 +17,14 @@
   background: white;
   border-radius: 10rpx;
 }
-
+.method {
+  height: 210rpx;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  border: solid white;
+  background: white;
+  border-radius: 10rpx;
+}
  /* Button */
    .submit-button {
        background-color: white;
