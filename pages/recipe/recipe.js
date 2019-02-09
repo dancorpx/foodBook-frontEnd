@@ -8,7 +8,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: { items: [] },
+  data: { recipes: [] },
  
 
   /**
@@ -18,12 +18,14 @@ Page({
     let page = this
     // fetch items from API
     myRequest.get({
-      path: 'recipes',
+      path: 'recipes/' + options.id,
       success(res) {
         console.log(res)
-        page.setData({ items: res.data.recipes })
+        page.setData({ recipe: res.data })
       }
     })
+  console.log(4445, options)
+  console.log(options.id)
 
   },
 

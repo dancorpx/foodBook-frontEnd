@@ -4,7 +4,7 @@
   border: solid red;
 }
 .banner {
-  height: 40vh;
+  height: 30vh;
   background-size: cover !important;
 }
 

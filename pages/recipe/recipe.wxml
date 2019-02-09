@@ -1,18 +1,16 @@
 <!--pages/recipe/recipe.wxml-->
-<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
-  <view class="recipe-img" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('{{item.image_url}}');">
+<view class="recipe-img" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('{{recipe.image_url}}');">
   </view>
   <view class="container">
       <view class="recipe-heading">
-      {{item.title}}
+      {{recipe.title}}
       </view>
       <view class="recipe-txt">
         <text>Ingredients:</text>
-          {{item.ingredients}}
+          {{recipe.ingredients}}
      </view>
     <view class="recipe-txt">
       <text>Method:</text>
-      {{item.method}}
+      {{recipe.method}}
     </view>
   </view>
- </block>

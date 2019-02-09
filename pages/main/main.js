@@ -8,7 +8,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: { items: [] },
+  data: { recipes: [] },
     
   
 
@@ -22,7 +22,7 @@ Page({
       path: 'recipes',
       success(res)  {
         console.log(res)
-        page.setData({items : res.data.recipes})
+        page.setData({recipes : res.data.recipes})
       }
     })
   },
@@ -30,15 +30,15 @@ Page({
       let that = this
       let data = e.currentTarget.dataset
       let index = data.index
-      let item_id = that.data.items[index].id
+      let recipe_id = that.data.recipes[index].id
 
-      let _url = '/pages/recipe/item?id=' + item_id
+      let _url = '/pages/recipe/recipe?id=' + recipe_id
 
-      console.log("goRecipe - item >>")
+      console.log("goRecipe - recipe >>")
       console.log(index)
 
-      app.globalData.recipe = that.data.items[index]
-      wx.redirectTo({
+      app.globalData.recipe = that.data.recipes[index]
+      wx.navigateTo({
         url: _url,
       })
     },
