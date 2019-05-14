@@ -1,4 +1,9 @@
 <!--index.wxml-->
-<view class="container">
-<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+<view class="background" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('http://lc-p7cesin0.cn-n1.lcfile.com/7bcc7da39dc879d3a9b0.jpg');">
+ 
+  <view class="container">
+  <!-- <text>Foodbook</text> -->
+  <text>吃的呀</text>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+  </view>
 </view>

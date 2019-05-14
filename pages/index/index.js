@@ -22,7 +22,7 @@ Page({
       data: {
         avatar: page.data.avatar
       },
-      sucess(res) {
+      success(res) {
         console.log(9090, res)
         if (res.statusCode > 300) {
           wx.showModal({
@@ -39,6 +39,7 @@ Page({
         }else{
           globalData.userAvatar = res.data.avatar
           wx.showToast({ title: 'success', icon: 'success', duration: 1000 })
+          console.log(585)
           wx.navigateTo({
             url: '/pages/main/main'
           })
