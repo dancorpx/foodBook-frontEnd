@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/main/main",
-    "pages/index/index",
     "pages/addRecipe/addRecipe",
-    "pages/recipe/recipe"
+    "pages/recipe/recipe",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
