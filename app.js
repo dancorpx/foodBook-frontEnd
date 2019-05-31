@@ -24,6 +24,7 @@ onLaunch: function () {
           console.log(333,res)
           this.globalData.userId = res.data.userId
           this.globalData.userAvatar = res.data.userAvatar
+          console.log(555, this.globalData)
         }
       })
     }

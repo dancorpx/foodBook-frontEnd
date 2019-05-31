@@ -1,5 +1,6 @@
 // pages/addRecipe/addRecipe.js
 const app = getApp()
+const globalData = app.globalData
 const AV = require('../../utils/av-weapp-min.js')
 const myRequest = require('../../lib/api/request.js');
 
@@ -18,11 +19,12 @@ Page({
       duration: 1000
     })
 
-    // Post new story to API
+    // Post new recipe to API
     myRequest.post ({
       path: 'recipes',
       data: {
         recipe: {
+          user_id: globalData.userId,
           title: e.detail.value.title,
           method: e.detail.value.method,
           image_url: page.data.image_url,
@@ -33,7 +35,7 @@ Page({
         console.log(res)
       }
     })
-  
+
   setTimeout(function () {
     wx.reLaunch({
       url: '/pages/main/main',

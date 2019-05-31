@@ -22,3 +22,10 @@
 text {
   font-weight: bold;
 }
+
+image {
+  height: 13vh;
+  width: 20vw;
+  border-radius: 100rpx;
+  border: solid rgba(204, 243, 249, 0.2);
+}
