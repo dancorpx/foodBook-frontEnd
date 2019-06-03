@@ -19,7 +19,7 @@ button {
   margin-top: auto;
   margin-bottom: auto;
   background-color: white;
-  color: #C34A44;
+  color: #91b3b6;
   border: solid 5rpx;
   width: 40vw;
 }

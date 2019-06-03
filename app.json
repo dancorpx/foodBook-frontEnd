@@ -7,14 +7,14 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "FoodBook",
+    "navigationBarBackgroundColor": "#d9f5f9",
+    "navigationBarTitleText": "Cooki",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "backgroundColor": "#FFF",
     "border Style": "D3D3D3",
-    "selectedColor": "#9F2C35",
+    "selectedColor": "#91b3b6",
     "color": "#888888",
     "list": [
       {

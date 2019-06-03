@@ -28,7 +28,7 @@
  /* Button */
    .submit-button {
        background-color: white;
-       color: #C34A44;
+       color: #91b3b6;
        border: solid 5rpx;
        margin: 30rpx;
    }

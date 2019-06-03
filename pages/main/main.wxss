@@ -34,8 +34,8 @@ border-radius: 17rpx;
 margin: auto;
 }
 .avatar {
-  height: 10vh;
-  width: 15vw;
+  height: 8vh;
+  width: 12vw;
   border-radius: 100rpx;
   border: solid rgba(204, 243, 249, 0.2);
 }
