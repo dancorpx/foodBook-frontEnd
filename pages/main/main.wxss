@@ -10,7 +10,7 @@
 
 .card {
   margin: auto;
-  height: 15vh;
+  height: 17vh;
   width: 90vw;
   display: flex;
   flex-direction: row;
@@ -32,4 +32,10 @@ padding: 2rpx;
 background-color: white;
 border-radius: 17rpx;
 margin: auto;
+}
+.avatar {
+  height: 10vh;
+  width: 15vw;
+  border-radius: 100rpx;
+  border: solid rgba(204, 243, 249, 0.2);
 }
