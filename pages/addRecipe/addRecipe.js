@@ -53,6 +53,7 @@ Page({
       success: function (res) {
         let tempFilePath = res.tempFilePaths[0];
         console.log(343, tempFilePath)
+        page.setData({tempPhotoPlaceholder: tempFilePath})
         console.log('Sending image to LeanCloud')
         new AV.File('file-name', {
           blob: {
