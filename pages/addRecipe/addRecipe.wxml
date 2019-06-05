@@ -10,7 +10,7 @@
       <textarea class="input" placeholder="Title"  name="title" auto-height />
       <textarea class="input" placeholder="Ingredients" name="ingredients" auto-height />
       <view wx:if="{{tempPhotoPlaceholder}}">
-        <button name="image_url" bindtap="takePhoto" class="image-upload" auto-height>Uploaded</button>
+        <button name="image_url" bindtap="takePhoto" class="image-uploaded" auto-height>Uploaded</button>
       </view>
       <view wx:else>
       <button name="image_url" bindtap="takePhoto" class="image-upload" auto-height>Upload Image</button>

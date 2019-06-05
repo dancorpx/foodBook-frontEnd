@@ -17,6 +17,10 @@
   background: white;
   border-radius: 10rpx;
 }
+.image-uploaded {
+  border: solid rgb(157, 235, 157);
+}
+
 .method {
   height: 210rpx;
   margin-top: 5rpx;
