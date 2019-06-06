@@ -38,4 +38,5 @@ margin: auto;
   width: 12vw;
   border-radius: 100rpx;
   border: solid rgba(204, 243, 249, 0.2);
+  margin: -15rpx;
 }

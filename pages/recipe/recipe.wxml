@@ -15,4 +15,8 @@
       <text>Method:</text>
       {{recipe.method}}
     </view>
+    <!-- about -->
+    <view bindtap="onShareAppMessage">
+      <button class="share-btn" open-type='share'>Share Recipe</button>
+    </view>
   </view>

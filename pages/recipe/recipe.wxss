@@ -9,6 +9,7 @@
 }
 .recipe-txt {
   margin-top: 20rpx;
+  margin-bottom: 40rpx;
   background: white;
   border: solid white;
   border-radius: 10rpx;
@@ -28,4 +29,9 @@ image {
   width: 20vw;
   border-radius: 100rpx;
   border: solid rgba(204, 243, 249, 0.2);
+}
+.share-btn {
+  background-color: #576b95;
+  color: white;
+  /* border: solid white; */
 }
