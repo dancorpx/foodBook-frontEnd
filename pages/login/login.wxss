@@ -9,7 +9,7 @@ text {
   font-size: 250rpx;
   background-color: transparent;
   color: white;
-  /* text-decoration: underline; */
+  text-shadow: -3rpx -3rpx 0 #4e6163, 3rpx -3rpx 0 #4e6163, -3rpx 3rpx 0 #91b3b6, 3rpx 3rpx 0 #91b3b6;
   border: solid 0rpx;
   padding-right: 20rpx;
   padding-left: 20rpx;

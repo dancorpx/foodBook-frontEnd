@@ -9,7 +9,7 @@ AV.init({
 App({
 onLaunch: function () {
   console.log(444, this.globalData)
-  const host = 'http://localhost:3000/api/v1/'
+  const host = 'http://47.99.223.218/api/v1/'
   console.log('processing to login')
   wx.login({
     success: (res) => {
