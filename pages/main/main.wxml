@@ -5,8 +5,8 @@
 <!-- BANNER -->
 <block wx:for="{{recipes}}" wx:for-item="recipe" wx:for-index="recipesIndex" wx:key="recipes">
 <!-- CARD -->
-  <view class="card">
-    <view class="card-img" data-index="{{recipesIndex}}" bindtap="goRecipe" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('{{recipe.image_url}}');">
+  <view class="card" data-index="{{recipesIndex}}" bindtap="goRecipe">
+    <view class="card-img" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('{{recipe.image_url}}');">
     <image class="avatar" src="{{recipe.user.avatar}}">
     </image>
     </view>
