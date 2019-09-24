@@ -9,7 +9,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#d9f5f9",
     "navigationBarTitleText": "Cooki",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "backgroundColor": "#FFF",
@@ -30,5 +31,9 @@
         "selectedPath": "commons/icons/post.png"
       }
     ]
+  },
+  "sitemapLocation": "sitemap57.json",
+  "usingComponents": {
+    "cu-custom": "colorui/components/cu-custom"
   }
 }

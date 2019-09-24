@@ -9,7 +9,7 @@ AV.init({
 App({
 onLaunch: function () {
   console.log(444, this.globalData)
-  const host = 'http://47.99.223.218/api/v1/'
+  const host = 'https://cooki.weminusplus.com/api/v1/'
   console.log('processing to login')
   wx.login({
     success: (res) => {
@@ -29,6 +29,14 @@ onLaunch: function () {
       })
     }
   })
+    wx.getSystemInfo({
+      success: e => {
+        this.globalData.StatusBar = e.statusBarHeight;
+        let custom = wx.getMenuButtonBoundingClientRect();
+        this.globalData.Custom = custom;
+        this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
+      }
+    })
 },
 globalData: {
   // userId: null,

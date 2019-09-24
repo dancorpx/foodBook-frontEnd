@@ -6,9 +6,41 @@ const myRequest = require('../../lib/api/request.js');
 
 Page({
 
-  
+  getUserInfo: function (e) {
+    let page = this
+    console.log(131, e)
+    globalData.userInfo = e.detail.userInfo
+    page.setData({
+      // userInfo: e.detail.userInfo,
+      avatar: e.detail.userInfo.avatarUrl
+    })
 
-  data: { },
+    myRequest.put({
+      path: `users/${globalData.userId}`,
+      data: {
+        avatar: page.data.avatar
+      },
+      success(res) {
+        console.log(9090, res)
+        if (res.statusCode > 300) {
+          wx.showModal({
+            title: 'Error',
+            content: 'Something went wrong',
+            success: function (res) {
+              if (res.confirm) {
+                console.log('confirm')
+              } else {
+                console.log('cancel')
+              } 
+              
+            }
+          })
+        }
+        }
+      })
+    
+  },
+  data: { user: [] },
   //  Form submit button
   bindSubmit: function (e) {
     

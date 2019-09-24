@@ -1,6 +1,10 @@
 <!--pages/main/main.wxml-->
 <!-- BANNER -->
-<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('http://lc-p7cesin0.cn-n1.lcfile.com/7bcc7da39dc879d3a9b0.jpg');">
+<cu-custom>
+	<view slot="backText" class="back">Back</view>
+	<view slot="content" class="nav">Cooki</view>
+</cu-custom>
+<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('http://lc-p7ceSin0.cn-n1.lcfile.com/f8d3d79cf727da8a5770/oatmeal-peanut-butter-cookies-with-chocolate-and-colored-candies-768x1154.jpg');">
  </view>
 <!-- BANNER -->
 <block wx:for="{{recipes}}" wx:for-item="recipe" wx:for-index="recipesIndex" wx:key="recipes">

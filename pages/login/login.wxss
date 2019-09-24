@@ -2,25 +2,29 @@
 
 .background {
   height: 100vh;
-  background-size: cover !important;
+  background-image: linear-gradient(rgba(0,101,168,0.2) 100%, rgba(0,36,61,0.2) 0%), url("http://lc-p7ceSin0.cn-n1.lcfile.com/f8d3d79cf727da8a5770/oatmeal-peanut-butter-cookies-with-chocolate-and-colored-candies-768x1154.jpg");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
 }
 
 text {
-  font-size: 250rpx;
-  background-color: transparent;
+  font-size: 200rpx;
+  background-color: rgba(1, 7, 14, 0.7);
   color: white;
-  text-shadow: -3rpx -3rpx 0 #4e6163, 3rpx -3rpx 0 #4e6163, -3rpx 3rpx 0 #91b3b6, 3rpx 3rpx 0 #91b3b6;
+  text-shadow: -3rpx -3rpx 0 black, 3rpx -3rpx 0 #4e6163, -3rpx 3rpx 0 black, 3rpx 3rpx 0 #4e6163;
   border: solid 0rpx;
   padding-right: 20rpx;
   padding-left: 20rpx;
-  margin-top: 7vh;  
+  margin-top: 15vh;  
 }
 
 button {
   margin-top: auto;
   margin-bottom: auto;
   background-color: white;
-  color: #91b3b6;
+  color: rgba(1, 7, 14, 0.74);
   border: solid 5rpx;
   width: 40vw;
 }

@@ -68,12 +68,13 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    // setTimeout(function () {
-    //   wx.reLaunch({
-    //     url: '/pages/main/main'
-    //   })
-    // }, 2000);
+  onLoad: function (options) {    
+    setTimeout(function () {
+      wx.reLaunch({
+        url: '/pages/main/main'
+      })
+    }, 2000);
+    wx.showToast({ title: 'loading', icon: 'loading', duration: 2000 })
   },
 
   /**

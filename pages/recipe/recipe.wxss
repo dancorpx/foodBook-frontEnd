@@ -1,4 +1,28 @@
 /* pages/recipe/recipe.wxss */
+.red {
+  border: solid red;
+}
+.cu-custom {
+  background-color:#d9f5f9;
+  color:white;
+  position:sticky;
+  top: 0;
+  z-index:2;
+}
+
+.back {
+  color:black;
+  font-size:40rpx;
+  position:sticky;
+}
+
+.nav {
+  color:black;
+  font-size:40rpx;
+  position:sticky;
+  padding-top: 20rpx;
+}
+
 .recipe-img {
   height: 40vh;
   background-size: cover !important;
@@ -25,8 +49,8 @@ text {
 }
 
 image {
-  height: 13vh;
-  width: 20vw;
+  height: 12vh;
+  width: 22vw;
   border-radius: 100rpx;
   border: solid rgba(204, 243, 249, 0.2);
 }

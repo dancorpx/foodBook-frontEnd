@@ -1,8 +1,58 @@
 /* pages/addRecipe/addRecipe.wxss */
+.cu-custom {
+  background-color:#d9f5f9;
+  color:black;
+  position:sticky;
+  top: 0;
+  z-index:2;
+}
+
+.back {
+  /* color:white; */
+  font-size:40rpx;
+  position:sticky;
+}
+
+.nav {
+  /* color:white; */
+  font-size:40rpx;
+  position:sticky;
+  padding-top: 20rpx;
+}
+
 .banner {
   height: 30vh;
   background-size: cover !important;
+  
 }
+.components {
+  padding-top: 170rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* height: 160rpx; */
+}
+.login-btn {
+  margin: 0;
+  margin-top: 30rpx;
+  margin-bottom: auto;
+  background-color: white;
+  color: #91b3b6;
+  border: solid 5rpx;
+  width: auto;
+  height: 100rpx;
+  
+}
+.avatar {
+  height: 180rpx;
+  width: 25vw;
+  border-radius: 100rpx;
+  border: solid rgba(204, 243, 249, 0.2);
+  margin: 10rpx;
+  z-index: 100;
+  background-color: white;
+}
+
 .page-title {
   font-size: 60rpx;
   font-weight: bold;
@@ -29,10 +79,17 @@
   background: white;
   border-radius: 10rpx;
 }
+textarea {
+  padding-bottom: 50rpx;
+}
  /* Button */
-   .submit-button {
-       background-color: white;
-       color: #91b3b6;
-       border: solid 5rpx;
-       margin: 30rpx;
-   }
+.submit-button {
+    background-color: white;
+    color: #91b3b6;
+    border: solid 5rpx;
+    margin: 30rpx;
+}
+
+.red {
+  border: solid red;
+}

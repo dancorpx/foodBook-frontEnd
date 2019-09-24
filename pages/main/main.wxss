@@ -3,6 +3,26 @@
 .red {
   border: solid red;
 }
+.cu-custom {
+  background-color:#d9f5f9;
+  color:black;
+  position:sticky;
+  top: 0;
+  z-index:2;
+}
+
+.back {
+  color:white;
+  font-size:40rpx;
+  position:sticky;
+}
+
+.nav {
+  color:black;
+  font-size:40rpx;
+  position:sticky;
+  padding-top: 20rpx;
+}
 .banner {
   height: 30vh;
   background-size: cover !important;
@@ -35,7 +55,7 @@ margin: auto;
 }
 .avatar {
   height: 8vh;
-  width: 12vw;
+  width: 14vw;
   border-radius: 100rpx;
   border: solid rgba(204, 243, 249, 0.2);
   margin: -15rpx;

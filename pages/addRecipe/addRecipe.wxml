@@ -1,6 +1,19 @@
 <!--pages/addRecipe/addRecipe.wxml-->
 <!-- BANNER -->
-<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('http://img.mp.itc.cn/upload/20170417/85719768647642ba91fc5b32210c1cc7_th.jpeg');">
+<cu-custom>
+    <view slot="backText" class ="back">Back</view>
+    <view slot="content" class ="nav">Cooki</view>
+</cu-custom>
+
+<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('http://lc-p7ceSin0.cn-n1.lcfile.com/f8d3d79cf727da8a5770/oatmeal-peanut-butter-cookies-with-chocolate-and-colored-candies-768x1154.jpg');">
+    <view class="components">
+      <view wx:if="{{avatar}}">
+        <image class="avatar" src="{{avatar}}"></image>
+      </view>
+      <view wx:else>
+        <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Log in</button>
+      </view>  
+    </view>
  </view>
 <!-- BANNER -->
 

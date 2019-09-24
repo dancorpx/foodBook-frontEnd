@@ -1,9 +1,8 @@
 <!--pages/login/login.wxml-->
-<view class="background" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.7) 0%, rgba(0,36,61,0.7) 50%), url('http://lc-p7cesin0.cn-n1.lcfile.com/7bcc7da39dc879d3a9b0.jpg');">
- 
+<view class="background">
   <view class="container">
   <text>Cooki</text>
   <!-- <text>Login</text> -->
-    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+    <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button> -->
   </view>
 </view>
